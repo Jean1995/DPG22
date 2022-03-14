@@ -1,0 +1,53 @@
+% This example is meant to be compiled with lualatex or xelatex
+% The theme itself also supports pdflatex
+\PassOptionsToPackage{unicode}{hyperref}
+\documentclass[aspectratio=1610, 9pt]{beamer}
+
+% Load packages you need here
+\usepackage{polyglossia}
+\setmainlanguage{english}
+
+\usepackage{csquotes}
+    
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{siunitx}
+
+% load the theme after all packages
+
+\usetheme[
+  showtotalframes, % show total number of frames in the footline
+]{tudo}
+
+% Put settings here, like
+\unimathsetup{
+  math-style=ISO,
+  bold-style=ISO,
+  nabla=upright,
+  partial=upright,
+  mathrm=sym,
+}
+
+\setlength{\footerleftwidth}{0.3\textwidth}
+\setlength{\footercenterwidth}{0.4\textwidth}
+\setlength{\footerrightwidth}{0.3\textwidth}
+
+\title{Applications of the high-energy \\lepton and photon propagator PROPOSAL}
+\author[jean-marco.alameddine@tu-dortmund.de]{Jean-Marco Alameddine\textsuperscript{1}, Jan Soedingrekso\textsuperscript{1}, Alexander Sandrock\textsuperscript{2}}
+\institute[]{Astroparticle Physics WG Rhode - TU Dortmund University\textsuperscript{1}\\University of Wuppertal\textsuperscript{2}}
+\titlegraphic{\includegraphics[width=0.7\textwidth]{images/muon_path.pdf}}
+\date[]{}
+
+
+\begin{document}
+
+\maketitle
+
+\input{content/introduction.tex}
+
+\end{document}
