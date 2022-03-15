@@ -20,6 +20,12 @@
 
 \usepackage{transparent}
 
+\usepackage{caption}
+\captionsetup{justification=justified}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
 \newcommand{\credit}[1]{\par\hspace{0.5\textwidth} \tiny Credit:~\itshape#1}
 
 % load the theme after all packages
@@ -49,6 +55,8 @@
 
 
 \begin{document}
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
 
 \maketitle
 
