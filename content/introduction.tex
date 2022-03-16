@@ -154,37 +154,39 @@
   \end{minipage}
   \begin{minipage}[t][1cm][t]{\textwidth}
     
-  \vspace{-20pt}
+  \vspace{-10pt}
   \begin{columns}[t]
     \column{.5\textwidth}
     \begin{figure}
-      \caption*{Muon energy losses:}
-      \vspace{-9pt}
-      \includegraphics[width=\linewidth, height=.37\textheight, keepaspectratio]{plots/muon_dEdx.png}
+      %\caption*{Muon energy losses:}
+      %\vspace{-9pt}
+      \includegraphics[width=\linewidth, height=.4\textheight, keepaspectratio]{plots/muon_dEdx.png}
     \end{figure}
-    \vspace{-15pt}
+    \vspace{-10pt}
     \begin{figure}
-      \caption*{Positron/Electron energy losses:}
-      \vspace{-9pt}
-      \includegraphics[width=\linewidth, height=.37\textheight, keepaspectratio]{plots/positron_dEdx.png}
+      %\caption*{Positron/Electron energy losses:}
+      %\vspace{-9pt}
+      \includegraphics[width=\linewidth, height=.4\textheight, keepaspectratio]{plots/positron_dEdx.png}
     \end{figure}
-    \vspace{-20pt}
+    \vspace{-10pt}
     \column{.5\textwidth}
     \begin{figure}
-      \caption*{Tau energy losses:}
-      \vspace{-9pt}
-      \includegraphics[width=\linewidth, height=.37\textheight, keepaspectratio]{plots/tau_dEdx.png}
+      %\caption*{Tau energy losses:}
+      %\vspace{-9pt}
+      \includegraphics[width=\linewidth, height=.4\textheight, keepaspectratio]{plots/tau_dEdx.png}
     \end{figure}
-    \vspace{-15pt}
+    \vspace{-10pt}
     \begin{figure}
-      \caption*{High-energy photon energy losses:}
-      \vspace{-9pt}
-      \includegraphics[width=\linewidth, height=.37\textheight, keepaspectratio]{plots/photon_dEdx.png}
+      %\caption*{High-energy photon energy losses:}
+      %\vspace{-9pt}
+      \includegraphics[width=\linewidth, height=.4\textheight, keepaspectratio]{plots/photon_dEdx.png}
     \end{figure}
   \end{columns}
 
   \end{minipage}
 \end{frame}
+
+% Maybe remove this slide and distribute it to the "Propagator" (C++/Python) and outlook slide (how to install)
 
 \begin{frame}[c]
   \begin{columns}[onlytextwidth]
@@ -194,7 +196,8 @@
       \setlength{\itemsep}{3pt}
       \item PROPOSAL is written in C\texttt{++}14, but callable from Python as well
           \begin{itemize}
-              \item[\rightarrow] Easy installation - Try: \texttt{pip install proposal}
+              \item[\rightarrow] Easy python installation - Try: \texttt{pip install proposal}
+              \item[\rightarrow] Easy usage in C\texttt{++} via the package manager \href{https://conan.io/center/proposal}{conan}
           \end{itemize}
       \item PROPOSAL is written in a modular and extentable way
           \begin{itemize}

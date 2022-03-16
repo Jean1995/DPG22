@@ -24,8 +24,8 @@
 \captionsetup{justification=justified}
 
 \usepackage{tikz}
-\usetikzlibrary{shapes}
-\usetikzlibrary{calc}
+\usetikzlibrary{shapes, arrows, backgrounds, fit, tikzmark, arrows.meta, calc, quotes, angles}
+
 \newcommand{\credit}[1]{\par\hspace{0.5\textwidth} \tiny Credit:~\itshape#1}
 
 % load the theme after all packages
@@ -61,6 +61,24 @@
 \maketitle
 
 \section{Introduction}
+
+\begin{frame}[plain,c,noframenumbering]
+  \begin{center}
+    \Huge Introduction to PROPOSAL
+  \end{center}
+\end{frame}
+
 \input{content/introduction.tex}
+
+\section{Updates}
+
+\begin{frame}[plain,c,noframenumbering]
+  \begin{center}
+    \Huge Recent updates in PROPOSAL
+  \end{center}
+\end{frame}
+
+\input{content/updates.tex}
+
 
 \end{document}
