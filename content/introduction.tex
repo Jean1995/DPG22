@@ -150,10 +150,12 @@
   \vspace{-3cm}
   \begin{minipage}[t][1cm][t]{\textwidth}
   {\huge \textbf{PROPOSAL}} {\huge\textbf{\rightarrow}}
-  \pgfsetfillopacity{0}\colorbox{tugreen}{\pgfsetfillopacity{1}{\huge \textbf{P}}{\Large ropagator}}{\Large with}\pgfsetfillopacity{0}\colorbox{tugreen}{\pgfsetfillopacity{1}{\huge \textbf{O}}{\Large ptimal }{\huge \textbf{P}}{\Large recision and }{\huge \textbf{O}}{\Large ptimized }{\huge \textbf{S}}{\Large peed}}{\Large for}\pgfsetfillopacity{0.9}\colorbox{tugreen}{\pgfsetfillopacity{1}{\huge \textbf{A}}ll {\huge \textbf{L}}{\Large eptons}}
+  \pgfsetfillopacity{0}\colorbox{tugreen}{\pgfsetfillopacity{1}{\huge \textbf{P}}{\Large ropagator}}{\Large with}\pgfsetfillopacity{0}\colorbox{tugreen}{\pgfsetfillopacity{1}{\huge \textbf{O}}{\Large ptimal }{\huge \textbf{P}}{\Large recision and }{\huge \textbf{O}}{\Large ptimized }{\huge \textbf{S}}{\Large peed}}{\Large for}\pgfsetfillopacity{0.9}\colorbox{tugreen}{\pgfsetfillopacity{1}{\huge \textbf{A}}ll {\huge \textbf{L}}{\Large eptons}}$\tikzmark{add}$
+
+
   \end{minipage}
   \begin{minipage}[t][1cm][t]{\textwidth}
-    
+
   \vspace{-10pt}
   \begin{columns}[t]
     \column{.5\textwidth}
@@ -184,6 +186,12 @@
   \end{columns}
 
   \end{minipage}
+  \newfontfamily{\Chalkduster}{Chalkduster}
+
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[text=red, rotate=10] (A) at ($({pic cs:add})+(-0.5ex,-2.7ex)$) {\Chalkduster and photons};
+  \end{tikzpicture}
+
 \end{frame}
 
 % Maybe remove this slide and distribute it to the "Propagator" (C++/Python) and outlook slide (how to install)
