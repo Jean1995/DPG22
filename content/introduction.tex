@@ -55,11 +55,13 @@
     \begin{columns}[onlytextwidth]
         \begin{column}{0.5\textwidth}
             \begin{itemize}
+              \item PROPOSAL: C\texttt{++}14/Python library
               \item 3D Monte Carlo simulation of individual particles, considering \ldots
               \begin{itemize}
                 \item[\normalcolor{\ldots}] energy losses
                 \item[\normalcolor{\ldots}] scattering effects
                 \item[\normalcolor{\ldots}] particle decays
+                \item[$\rightarrow$] \textbf{Customizable:} Selection of different parametrizations available for each process
               \end{itemize}
               \item \textbf{Input:} Initial particle state
               \item \textbf{Output:} Information on particle track, including \ldots
@@ -106,8 +108,8 @@
             \end{itemize}
           \textbf{Energy cuts:}
           \begin{itemize}
-            \item Energy losses can be defined by their relative size $v_\text{loss}$ and their absolute size $e_\text{loss}$
             \item PROPOSAL differentiates between continuous and stochastic energy losses
+            \item Energy losses can be defined by their relative size $v_\text{loss}$ and their absolute size $e_\text{loss}$
             \item The energy cut settings ($v_\text{cut}, e_\text{cut}$) define which interaction are treated stochastically/continuously
             %\begin{itemize}
             %  \item[$\rightarrow$] Adjust energy cut settings to find ideal trade-off between precision and performance
@@ -196,7 +198,7 @@
 
 % Maybe remove this slide and distribute it to the "Propagator" (C++/Python) and outlook slide (how to install)
 
-\begin{frame}[c]
+\begin{frame}<presentation:0>[c]
   \begin{columns}[onlytextwidth]
   \begin{column}{0.6\textwidth}
   \textbf{Some technical details:}

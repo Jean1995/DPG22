@@ -1,12 +1,31 @@
 
 \begin{frame}[c]
     \begin{columns}[onlytextwidth]
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.7\textwidth}
+            \textbf{Summary}
             \begin{itemize}
-                \item PROPOSAL is a customizable C\texttt{++}/Python framework to propagate high-energy leptons and photons 
+                \item C\texttt{++}/Python framework to propagate high-energy leptons and photons 
+                \begin{itemize}
+                    \item[$\rightarrow$] Easy python installation: Try: \texttt{pip install proposal}
+                \end{itemize}
+                \item PROPOSAL is adaptable for different use cases
+                \begin{itemize}
+                    \item[$\rightarrow$] EnergyCuts: Adjustable trade-off between precision and performance
+                    \item[$\rightarrow$] All interaction processes are modular and customizable 
+                \end{itemize}
+                \item Recent updates in PROPOSAL \ldots
+                \begin{itemize}
+                    \item[\normalcolor{\ldots}] for high-energy photon propagation
+                    \item[\normalcolor{\ldots}] in the description of muon scattering
+                \end{itemize}
+                \item PROPOSAL is used in a wide field of applications (e.g. IceCube, CORSIKA~8)
+                \item Actively maintained and developed as an open-source project
+                \begin{itemize}
+                    \item[\rightarrow] Visit us on GitHub: \url{github.com/tudo-astroparticlephysics/PROPOSAL}
+                \end{itemize}
             \end{itemize}
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.3\textwidth}
             \begin{center}
                 \begin{tikzpicture}[scale=1, transform shape]
                     \newlength{\photodim}
@@ -15,20 +34,20 @@
                     \setlength{\borderdim}{0.3mm}%
 
                     \node[circle, draw=tugreen, line width=\borderdim, inner
-                    sep=\photodim, fill overzoom image=logos/cpp-python.png] at (1.8,0) {};
+                    sep=\photodim, fill overzoom image=images/collaboration.png] at (1.8,0) {};
 
-                    %\node[circle, draw=tugreen, fill=white, line width=\borderdim, inner
-                    %sep=\photodim, fill overzoom image=images/feynman/epair_feynman.pdf] at (0,1) {};
+                    \node[circle, draw=tugreen, fill=white, line width=\borderdim, inner
+                    sep=\photodim, fill overzoom image*={angle=90,clip,trim=1.0cm 2cm 0.5cm 6cm}{plots/shower.png}] at (0,1) {};
 
-                    %\node[circle, draw=tugreen, line width=\borderdim, inner
-                    %sep=\photodim, fill overzoom image=images/collaboration.png] at (1.8,2) {};
+                    \node[circle, draw=tugreen, line width=\borderdim, inner
+                    sep=\photodim, fill overzoom image*={clip,trim=0 3cm 0 0}{images/Track.png}] at (1.8,2) {};
 
 
-                    %\node[circle, draw=tugreen, line width=\borderdim, inner
-                    %sep=\photodim, fill overzoom image=images/Track.png] at (0,3) {};
+                    \node[circle, draw=tugreen, line width=\borderdim, inner
+                    sep=\photodim, fill overzoom image*={clip,trim=2cm 2cm 2cm 1cm}{plots/tracks.png}] at (0,3) {};
 
-                    %\node[circle, draw=tugreen, line width=\borderdim, inner
-                    %sep=\photodim, fill overzoom image=logos/cpp-python.png] at (1.8,4) {};
+                    \node[circle, draw=tugreen, line width=\borderdim, inner
+                    sep=\photodim, fill overzoom image=logos/cpp-python.png] at (1.8,4) {};
                 \end{tikzpicture}
             \end{center}
 
